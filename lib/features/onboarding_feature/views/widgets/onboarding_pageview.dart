@@ -37,7 +37,7 @@ class OnboardingPageView extends StatelessWidget {
             child: Text(
               AppStrings.onboardingTitle,
               style:
-                  getBoldTextStyle(AppFontSize.s32.sp, AppColors.primaryColor),
+                  getBoldTextStyle(AppFontSize.s32, AppColors.primaryColor),
               textAlign: TextAlign.center,
             ))
       ],

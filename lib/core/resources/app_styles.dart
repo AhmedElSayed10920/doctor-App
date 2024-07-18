@@ -13,6 +13,10 @@ TextStyle getRegularTextStyle(fontSize, color) {
   return _getTextStyle(fontSize, AppFontWeight.regular, color);
 }
 
+TextStyle getMediumTextStyle(fontSize, color) {
+  return _getTextStyle(fontSize, AppFontWeight.medium, color);
+}
+
 TextStyle getSemiBoldTextStyle(fontSize, color) {
   return _getTextStyle(fontSize, AppFontWeight.semiBold, color);
 }

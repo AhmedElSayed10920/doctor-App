@@ -3,7 +3,6 @@ import 'package:doctor/core/resources/app_font_styles.dart';
 import 'package:doctor/core/resources/app_strings.dart';
 import 'package:doctor/core/resources/app_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 class OnboardingTitle extends StatelessWidget {
@@ -19,7 +18,7 @@ class OnboardingTitle extends StatelessWidget {
         SvgPicture.asset(AppAssests.titleLogo),
         Text(
           AppStrings.appTitle,
-          style: getBoldTextStyle(AppFontSize.s24.sp, Colors.black),
+          style: getBoldTextStyle(AppFontSize.s24, Colors.black),
         )
       ],
     );
