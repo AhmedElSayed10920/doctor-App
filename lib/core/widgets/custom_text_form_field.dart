@@ -12,10 +12,12 @@ class CustomTextFormField extends StatelessWidget {
     this.obscureText = false,
     required this.hintText,
     this.suffixIcon,
+    required this.validator,
   });
   final TextEditingController? controller;
   final bool obscureText;
   final String hintText;
+  final String? Function(String?) validator;
 
   final Widget? suffixIcon;
 
@@ -23,9 +25,14 @@ class CustomTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      validator: (val) {
+        return validator(val);
+      },
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       cursorColor: AppColors.primaryColor,
       obscureText: obscureText,
       decoration: InputDecoration(
+        isDense: true,
         hintText: hintText,
         hintStyle: getMediumTextStyle(AppFontSize.s14, AppColors.lightGrey),
         suffixIcon: suffixIcon,
@@ -34,6 +41,8 @@ class CustomTextFormField extends StatelessWidget {
         fillColor: AppColors.fillLighterGrey,
         enabledBorder: getTextFieldBorder(AppColors.lighterGrey),
         focusedBorder: getTextFieldBorder(AppColors.primaryColor),
+        errorBorder: getTextFieldBorder(Colors.red),
+        focusedErrorBorder: getTextFieldBorder(Colors.red),
       ),
     );
   }
