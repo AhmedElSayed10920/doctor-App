@@ -12,6 +12,6 @@ class AppStrings {
   static const loginButtonText = "Login";
   static const signUpButtonText = " Sign Up ";
   static const forgetPasswordText = "Forgot Password?";
-  static const haveAccountText = "Already have an account yet?";
-  static const haveNotAccountText = "Already have an account yet?";
+  static const haveAccountText = "Already have an account?";
+  static const haveNotAccountText = "Don't have an account yet?";
 }

@@ -59,7 +59,7 @@ class LoginView extends StatelessWidget {
                 const TermsAndConditionRichText(),
                 verticalSpace(AppSizes.s20),
                 AlreadyHaveOrNotAnAccount(
-                  text: AppStrings.haveAccountText,
+                  text: AppStrings.haveNotAccountText,
                   clickedText: AppStrings.signUpButtonText,
                   onTap: () {},
                 ),
