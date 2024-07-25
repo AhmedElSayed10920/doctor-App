@@ -1,9 +1,11 @@
+import 'package:doctor/core/helpers/extensions.dart';
 import 'package:doctor/core/helpers/spacer.dart';
 import 'package:doctor/core/resources/app_colors.dart';
 import 'package:doctor/core/resources/app_font_styles.dart';
 import 'package:doctor/core/resources/app_sizes.dart';
 import 'package:doctor/core/resources/app_strings.dart';
 import 'package:doctor/core/resources/app_styles.dart';
+import 'package:doctor/core/routing/routers.dart';
 import 'package:doctor/core/widgets/custom_button.dart';
 import 'package:doctor/features/login_feature/data/models/login_request_body.dart';
 import 'package:doctor/features/login_feature/logic/login_cubit/login_cubit.dart';
@@ -35,7 +37,7 @@ class LoginView extends StatelessWidget {
                   style:
                       getBoldTextStyle(AppFontSize.s24, AppColors.primaryColor),
                 ),
-                verticalSpace(AppFontSize.s10),
+                verticalSpace(AppSizes.s10),
                 Text(
                   AppStrings.loginContentText,
                   style: getRegularTextStyle(AppFontSize.s14, AppColors.grey)
@@ -56,7 +58,9 @@ class LoginView extends StatelessWidget {
                 AlreadyHaveOrNotAnAccount(
                   text: AppStrings.haveNotAccountText,
                   clickedText: AppStrings.signUpButtonText,
-                  onTap: () {},
+                  onTap: () {
+                    context.pushNamed(Routers.signUpView);
+                  },
                 ),
                 const LoginBlocListener(),
               ],
