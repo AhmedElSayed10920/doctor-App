@@ -21,7 +21,7 @@ class TermsAndConditionRichText extends StatelessWidget {
         TextSpan(
           text: " Terms & Conditions",
           style: getMediumTextStyle(
-              AppFontSize.s11, AppColors.blackText),
+              AppFontSize.s11, AppColors.darkBlue),
         ),
         TextSpan(
           text: " and ",
@@ -31,7 +31,7 @@ class TermsAndConditionRichText extends StatelessWidget {
         TextSpan(
           text: "PrivacyPolicy.",
           style: getMediumTextStyle(
-              AppFontSize.s11, AppColors.blackText),
+              AppFontSize.s11, AppColors.darkBlue),
         )
       ]),
     );

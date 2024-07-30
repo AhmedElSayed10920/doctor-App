@@ -1,6 +1,7 @@
 class AppSizes {
   static const double screenWidth = 375;
   static const double screenHeight = 812;
+  static const double s5 = 5;
   static const double s10 = 10;
   static const double s16 = 16;
   static const double s17 = 17;

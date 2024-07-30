@@ -19,7 +19,7 @@ class AlreadyHaveOrNotAnAccount extends StatelessWidget {
         Text(
           text,
           style: getRegularTextStyle(
-              AppFontSize.s11, AppColors.blackText),
+              AppFontSize.s11, AppColors.darkBlue),
         ),
         GestureDetector(
           onTap: onTap ,

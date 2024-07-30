@@ -1,3 +1,5 @@
+import 'package:doctor/features/home_feature/views/widgets/custom_home_app_bar.dart';
+import 'package:doctor/features/home_feature/views/widgets/find_nearby_doctor_blue_container.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -5,12 +7,19 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Home Pagee"),
-        centerTitle: true,
-      ),
-      body: const Center(child: Text("THIS IS HOME PAGE")),
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+          child: Padding(
+        padding: EdgeInsets.fromLTRB(20, 16, 20, 28),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            CustomHomeAppBar(),
+            FindNearbyDoctorBlueContainer(),
+          ],
+        ),
+      )),
     );
   }
 }
