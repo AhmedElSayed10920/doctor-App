@@ -27,5 +27,13 @@ class AppStrings {
   static const haveAccountText = "Already have an account? ";
 
 
+  //home page
+  static const hiMessage = "Hi, Ahmed!";
+  static const welcomeMessage = "How Are you Today?";
+  static const blueContainerText = "Book and\nschedule with\nnearest doctor";
+  static const findNearbyButton = "Find Nearby";
+
+
+
 
 }
