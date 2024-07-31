@@ -4,14 +4,15 @@ import 'package:doctor/core/resources/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class DoctorSpecialitySeeAll extends StatelessWidget {
-  const DoctorSpecialitySeeAll({super.key});
+  const DoctorSpecialitySeeAll({super.key, required this.seeAllRowTitle});
+  final String seeAllRowTitle;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Text(
-          "Doctor Speciality",
+          seeAllRowTitle,
           style: getSemiBoldTextStyle(AppFontSize.s18, AppColors.darkBlue),
         ),
         const Spacer(),

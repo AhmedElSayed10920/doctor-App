@@ -32,6 +32,8 @@ class AppStrings {
   static const welcomeMessage = "How Are you Today?";
   static const blueContainerText = "Book and\nschedule with\nnearest doctor";
   static const findNearbyButton = "Find Nearby";
+  static const seeAllDoctorSpeciality = "Doctor Speciality";
+  static const seeAllRecommendationDoctors = "Recommendation Doctor";
 
 
 

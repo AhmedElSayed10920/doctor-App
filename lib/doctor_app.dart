@@ -1,8 +1,10 @@
+import 'package:doctor/core/resources/app_colors.dart';
 import 'package:doctor/core/resources/app_sizes.dart';
 import 'package:doctor/core/resources/theme.dart';
 import 'package:doctor/core/routing/app_routing.dart';
 import 'package:doctor/features/onboarding_feature/views/onboarding_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DoctorApp extends StatelessWidget {
@@ -10,6 +12,8 @@ class DoctorApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(statusBarColor: AppColors.white));
     return ScreenUtilInit(
       designSize: const Size(AppSizes.screenWidth, AppSizes.screenHeight),
       minTextAdapt: true,
