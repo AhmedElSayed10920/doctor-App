@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:doctor/features/home_feature/data/models/doctor_speciality_response_body_model.dart';
 import 'package:doctor/features/login_feature/data/models/login_request_body.dart';
 import 'package:doctor/features/login_feature/data/models/login_response_body.dart';
 import 'package:doctor/features/signup_feature/data/models/sign_up_request_body.dart';
@@ -20,6 +21,9 @@ abstract class ApiService {
   Future<SignUpResponseBody> signUp(
     @Body() SignUpRequestBody signUpRequestBody,
   );
+
+   @GET(ApiConstants.doctorSpecializationEP)
+  Future<DoctorSpecialityResponseBodyModel> getDoctorSpecialization();
 
   
   

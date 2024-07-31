@@ -3,10 +3,9 @@ import 'package:doctor/core/resources/app_colors.dart';
 import 'package:doctor/core/resources/app_sizes.dart';
 import 'package:doctor/core/resources/app_strings.dart';
 import 'package:doctor/features/home_feature/views/widgets/custom_home_app_bar.dart';
-import 'package:doctor/features/home_feature/views/widgets/doctor_speciality_list_view.dart';
 import 'package:doctor/features/home_feature/views/widgets/doctor_speciality_see_all.dart';
+import 'package:doctor/features/home_feature/views/widgets/doctor_specialization.dart';
 import 'package:doctor/features/home_feature/views/widgets/find_nearby_doctor_blue_container.dart';
-import 'package:doctor/features/home_feature/views/widgets/recommended_doctors_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -31,13 +30,7 @@ class HomeView extends StatelessWidget {
               seeAllRowTitle: AppStrings.seeAllDoctorSpeciality,
             ),
             verticalSpace(AppSizes.s16.h),
-            const DoctorSpecialityListView(),
-            verticalSpace(AppSizes.s16.h),
-            const DoctorSpecialitySeeAll(
-              seeAllRowTitle: AppStrings.seeAllRecommendationDoctors,
-            ),
-            verticalSpace(AppSizes.s16.h),
-            const RecommendedDoctorsListView(),
+            const DoctorsSpecialization(),
           ],
         ),
       )),
